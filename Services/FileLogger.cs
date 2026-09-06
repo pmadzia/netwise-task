@@ -1,8 +1,10 @@
+using Microsoft.Extensions.Options;
+
 namespace ConsoleApiClient.Services;
 
-public class FileLogger(string filePath) : IFileLogger
+public class FileLogger(IOptions<FileOptions> options) : IFileLogger
 {
-    private readonly string _filePath = filePath;
+    private readonly string _filePath = options.Value.Path;
 
     public async Task AppendAsync(string message)
     {

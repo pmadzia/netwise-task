@@ -4,14 +4,17 @@ using Microsoft.Extensions.Hosting;
 
 var builder = Host.CreateApplicationBuilder(args);
 
-builder.Services.AddHttpClient<IApiClient, ApiClient>(client =>
-{
-    client.BaseAddress = new Uri(
-        "https://catfact.ninja/");
-});
+builder.Services
+    .AddOptions<ApiOptions>()
+    .Bind(builder.Configuration.GetSection("Api"));
 
-builder.Services.AddSingleton<IFileLogger>(_ =>
-    new FileLogger("logs/requests.txt"));
+builder.Services
+    .AddOptions<ConsoleApiClient.Services.FileOptions>()
+    .Bind(builder.Configuration.GetSection("File"));
+
+builder.Services.AddHttpClient<IApiClient, ApiClient>();
+
+builder.Services.AddSingleton<IFileLogger, FileLogger>();
 
 builder.Services.AddTransient<IRequestService, RequestService>();
 
