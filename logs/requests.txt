@@ -1,1 +1,12 @@
 06-09-2026 20::09:05 || {"fact":"Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.","length":103}
+06-09-2026 20::46:50 || {"fact":"In 1987 cats overtook dogs as the number one pet in America.","length":60}
+06-09-2026 21::18:11 || {"fact":"Today there are about 100 distinct breeds of the domestic cat.","length":62}
+06-09-2026 21::25:52 || {"fact":"Cats sleep 16 to 18 hours per day. When cats are asleep, they are still alert to incoming stimuli. If you poke the tail of a sleeping cat, it will respond accordingly.","length":167}
+06-09-2026 21::27:22 || {"fact":"The cheetah is the world's fastest land mammal. It can run at speeds of up to 70 miles an hour (113 kilometers an hour).","length":120}
+06-09-2026 21::35:50 || {"fact":"In one stride, a cheetah can cover 23 to 26 feet (7 to 8 meters).","length":65}
+06-09-2026 21::39:13 || {"fact":"A cat's cerebral cortex contains about twice as many neurons as that of dogs. Cats have 300 million neurons, whereas dogs have about 160 million. See, cats rule, dogs drool!","length":173}
+06-09-2026 21::39:19 || {"fact":"A cat's hearing is much more sensitive than humans and dogs.","length":60}
+06-09-2026 21::39:27 || {"fact":"Lions are the only cats that live in groups, called prides. Every female within the pride is usually related.","length":109}
+06-09-2026 21::45:13 || {"fact":"70% of your cat's life is spent asleep.","length":39}
+06-09-2026 21::46:58 || {"fact":"Cats do not think that they are little people. They think that we are big cats. This influences their behavior in many ways.","length":124}
+06-09-2026 21::47:07 || {"fact":"The Amur leopard is one of the most endangered animals in the world.","length":68}
