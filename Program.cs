@@ -26,4 +26,18 @@ using var host = builder.Build();
 
 var request = host.Services.GetRequiredService<IRequestService>();
 
-await request.ProcessAsync();
+while (true)
+{
+    Console.Write("Do you want to make a request? (y/n): ");
+
+    var answer = Console.ReadLine();
+
+    if (answer?.ToLower() == "y")
+    {
+        await request.ProcessAsync();
+    }
+    else if (answer?.ToLower() == "n")
+    {
+        break;
+    }
+}
