@@ -13,13 +13,10 @@ builder.Services.AddHttpClient<IApiClient, ApiClient>(client =>
 builder.Services.AddSingleton<IFileLogger>(_ =>
     new FileLogger("logs/requests.txt"));
 
+builder.Services.AddTransient<IRequestService, RequestService>();
+
 using var host = builder.Build();
 
-var apiClient = host.Services.GetRequiredService<IApiClient>();
-var fileLogger = host.Services.GetRequiredService<IFileLogger>();
+var request = host.Services.GetRequiredService<IRequestService>();
 
-var result = await apiClient.GetAsync();
-
-Console.WriteLine(result);
-
-await fileLogger.AppendAsync(result);
+await request.ProcessAsync();
