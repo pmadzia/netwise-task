@@ -10,10 +10,16 @@ builder.Services.AddHttpClient<IApiClient, ApiClient>(client =>
         "https://catfact.ninja/");
 });
 
+builder.Services.AddSingleton<IFileLogger>(_ =>
+    new FileLogger("logs/requests.txt"));
+
 using var host = builder.Build();
 
 var apiClient = host.Services.GetRequiredService<IApiClient>();
+var fileLogger = host.Services.GetRequiredService<IFileLogger>();
 
 var result = await apiClient.GetAsync();
 
 Console.WriteLine(result);
+
+await fileLogger.AppendAsync(result);
