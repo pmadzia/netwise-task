@@ -1,3 +1,3 @@
 ### Netwise Task
 
-Implementacja zadania z użyciem Dependency Injection.
+Implementation of the task using Dependency Injection.
