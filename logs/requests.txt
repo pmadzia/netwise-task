@@ -10,3 +10,7 @@
 06-09-2026 21::45:13 || {"fact":"70% of your cat's life is spent asleep.","length":39}
 06-09-2026 21::46:58 || {"fact":"Cats do not think that they are little people. They think that we are big cats. This influences their behavior in many ways.","length":124}
 06-09-2026 21::47:07 || {"fact":"The Amur leopard is one of the most endangered animals in the world.","length":68}
+06-09-2026 22::05:16 || {"fact":"The first cat show was in 1871 at the Crystal Palace in London.","length":63}
+06-09-2026 22::05:19 || {"fact":"Cats, especially older cats, do get cancer. Many times this disease can be treated successfully.","length":96}
+06-09-2026 22::17:03 || {"fact":"Cats with long, lean bodies are more likely to be outgoing, and more protective and vocal than those with a stocky build.","length":121}
+06-09-2026 22::17:15 || {"fact":"The first cartoon cat was\u00a0Felix the Cat\u00a0in 1919. In 1940, Tom and Jerry starred in the first theatrical cartoon \u201cPuss Gets the Boot.\u201d In 1981 Andrew Lloyd Weber created the musical\u00a0Cats, based on T.S. Eliot\u2019s Old\u00a0Possum\u2019s Book of Practical Cats.","length":245}
