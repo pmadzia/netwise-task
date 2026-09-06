@@ -6,11 +6,15 @@ var builder = Host.CreateApplicationBuilder(args);
 
 builder.Services
     .AddOptions<ApiOptions>()
-    .Bind(builder.Configuration.GetSection("Api"));
+    .Bind(builder.Configuration.GetSection("Api"))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();;
 
 builder.Services
     .AddOptions<ConsoleApiClient.Services.FileOptions>()
-    .Bind(builder.Configuration.GetSection("File"));
+    .Bind(builder.Configuration.GetSection("File"))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
 
 builder.Services.AddHttpClient<IApiClient, ApiClient>();
 
